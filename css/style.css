@@ -1,0 +1,20 @@
+*{font-family: "微软雅黑";}
+input,textarea{border-radius: 5;}
+table{border-collapse:collapse;border: 1px solid deepskyblue;} 
+
+/*tr:nth-child(odd){
+    background-color:#CFF;}
+tr:nth-child(even){
+    background-color:#699;}
+tr:hover{
+    background-color:#F0C;}*/
+table tr:nth-child(1){background: deepskyblue;  color: white; cursor: default;}
+tr:nth-child(odd){background:#F4F4F4;}
+tr:hover{background: lightcyan; cursor: hand ;} 
+.sp1{width: 200px;display: inline-block;text-align: center; vertical-align:top ;}
+.sp2{width:500px; align-content: center;}
+.sp3{width: 500px; text-align: center;  display: inline-block;}
+.bt{width: 200px; height: 40px;background-color: dodgerblue;color: white;border-radius: 6px;border: 0;}
+.bt1{width: 100px; height: 30px;background-color: dodgerblue;color: white;border-radius: 10px;border: 0;}
+.div0{width:100%; height: 50px; align-content:center; border-width: 20px; background-color:deepskyblue; padding: 20px;  }
+.nav{margin-top: 2px;width: 100%;height: 30px;background-color:darkgray; margin-bottom:2px; text-align: left;}
