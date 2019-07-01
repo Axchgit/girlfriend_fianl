@@ -15,7 +15,8 @@
 		<title>管理员页面</title>
 		<link href="css/navigation.css" rel="stylesheet" type="text/css">
 	</head>
-	<body ><?php include'conn/verify_admin.php' ?>
+	<body >
+		<?php include'conn/verify_admin.php' ?>
 
 			<hr>
 	</body>

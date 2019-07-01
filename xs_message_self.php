@@ -18,7 +18,6 @@
 include 'conn/conn.php';
 include 'conn/verify_xs.php';
 	$a=$_SESSION['usname'];
-//include 'conn/verify_admin.php';
 
 $sql1="select count(*) from student_message";
 $ps=$link->query($sql1);

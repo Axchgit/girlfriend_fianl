@@ -9,7 +9,6 @@
 
     header("Content-type:application/vnd.ms-excel");  
     header("Content-Disposition:filename=$a");  
- 
     $strexport="编号\t姓名\t学号\t性别\t班级\t联系方式\t工作岗位\t工资\t添加时间\r";
     foreach ($re as $row){  
 	

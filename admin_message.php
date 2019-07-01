@@ -16,14 +16,13 @@
 		<link href="css/navigation.css" rel="stylesheet" type="text/css">
 	</head>
 	<body >
-<!--<?php include('css/header_admin.php') ?>-->
 			<hr>
 	   
 	</body>
 </html>
 <?php
 include 'conn/conn.php';
-//include 'conn/verify_admin.php';
+include 'conn/verify_admin.php';
 
 $sql1="select count(*) from admin";
 $ps=$link->query($sql1);

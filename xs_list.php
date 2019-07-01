@@ -16,7 +16,6 @@
 		<link href="css/navigation.css" rel="stylesheet" type="text/css">
 	</head>
 	<body >
-<!--<?php include('css/header_admin.php') ?>-->
 			<hr>
 
 	</body>
@@ -29,7 +28,6 @@ $sql1="select count(*) from student_message";
 $ps=$link->query($sql1);
 
 $rows=$ps->fetchColumn(0);//获取总行数
-//$rows=$ps->rowCount(); 
 $pageSize=6; //每一页大小
 $pageCount=(int)ceil($rows/$pageSize);
 if(isset($_GET['p'])){
@@ -37,17 +35,11 @@ if(isset($_GET['p'])){
 	}else{
 		$currentPage=1;
 	}
-//$currentPage=1;
 $first=($currentPage-1)*$pageSize;
 
 $sql2="select * from student_message order by id limit $first,$pageSize";
 
 $ps2=$link->query($sql2);
-
-
-
-//$result=$ps->fetchAll(pdo::fetch_num);
-
 echo '<table class="ah" border=2><br><br></caption><tr><th>序号</th><th>头像</th><th>姓名</th><th>学号</th><th>性别</th><th>班级</th><th>联系方式</th><th>密码</th><th>工作岗位</th><th>工资</th><th>入岗时间</th><th>操作</th></tr>';
 foreach($ps2 as $arr){
 	echo "<tr>
